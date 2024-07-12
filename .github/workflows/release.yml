@@ -1,6 +1,10 @@
-name: Release & Publish
+name: Release
 
-on: workflow_dispatch
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
 
 jobs:
   test:
